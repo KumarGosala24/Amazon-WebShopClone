@@ -343,34 +343,94 @@ button {
 
 }
 
-.container3 {
+/* Product Slider Section */
+.product-slider {
+    margin-top: 2%;
+}
+
+/* Slider Container */
+.product-slider-container {
     background-color: white;
     border: 1px solid #ddd;
     border-radius: 5px;
-    /* width: 500px; 
-    height: 285px;  */
+    width: 100%;
+    height: 350px; /* Adjusted for better fit */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
 }
-.container3 h3 {
+
+/* Heading Styling */
+.product-slider-container h3 {
     padding-top: 1%;
     font-size: 25px;
     margin-bottom: 15px;
+    text-align: center;
     color: #333;
 }
 
-.container3 {
+/* Carousel Styling */
+.carousel {
     position: relative;
-    /* width: 100%;
-    max-width: 1200px; */
-    margin: auto;
     overflow: hidden;
+    margin: auto;
+    width: 90%; /* Adjusts to the container */
 }
-.slide {
-    min-width: 100%;
+
+/* Track for Slides */
+.carousel-track {
     display: flex;
-    justify-content: space-between;
-    padding-bottom: 15px;
+    transition: transform 0.5s ease-in-out;
+    gap: 15px; /* Space between images */
 }
+
+/* Individual Slide */
+.carousel-item {
+    flex: 0 0 auto;
+    width: 220px; /* Medium-size images */
+    height: 180px; /* Adjust height */
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Image Styling */
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures consistent image scaling */
+    display: block;
+    border-radius: 5px;
+}
+
+/* Navigation Buttons */
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1000;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.btn-left {
+    left: 10px;
+}
+
+.btn-right {
+    right: 10px;
+}
+
+/* Hover Effect for Buttons */
+.carousel-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
 
 /**CONTAINER 4 **/
 
